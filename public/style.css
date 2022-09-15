@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "poppins";
+  font-weight: 100;
+  src: url("/fonts/100.woff2") format("woff2");
+}
+@font-face {
+  font-family: "poppins";
+  font-weight: 400;
+  src: url("/fonts/400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "poppins";
+  font-weight: 600;
+  src: url("/fonts/600.woff2") format("woff2");
+}
+
+:root {
+  --primary-color: #ab55c8;
+  --secondary-color: #2d219f;
+  --purple-gradient: linear-gradient(
+    to left,
+    rgba(171, 85, 200, 0.9),
+    rgba(45, 33, 159, 0.8)
+  );
+  --button-gradient: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins";
+  font-weight: 400;
+  transition: all 1s;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: var(--purple-gradient), url("/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.navigation {
+  width: 90%;
+  height: 10vh;
+  font-family: "poppins";
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .links {
+  display: flex;
+}
+.navigation .links .link {
+  padding: 0 1.6rem;
+  color: white;
+}
+.navigation .links a {
+  transition: all 0.5s;
+  color: white;
+}
+.navigation .links a:hover,
+.navigation .links a:active {
+  color: #000;
+}
+.tag-line {
+  position: absolute;
+  margin: 20rem 0;
+  color: #fff;
+  font-weight: 100;
+  transition: all 0.3s ease 0s;
+}
+.tag-line h3 {
+  font-weight: 300;
+  font-size: 6.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 4.8rem;
+}
+.tag-line h3:first-child {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.tag-line a {
+  color: #fff;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.4rem 2.8rem;
+  border-radius: 50px;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+}
+.tag-line li {
+  text-align: center;
+  margin: 3.2rem;
+}
+.tag-line li a:hover {
+  background: var(--button-gradient);
+  border: none;
+}
