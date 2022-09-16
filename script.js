@@ -35,7 +35,7 @@ document.addEventListener("visibilitychange", () => {
         tag: "Leave Interval",
         vibrate: true,
       })
-    })
+    }, 1000)
   } else {
     if (interval) clearInterval(interval)
     if (notification) notification.close()
