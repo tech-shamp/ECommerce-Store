@@ -1,17 +1,17 @@
 @font-face {
   font-family: "poppins";
   font-weight: 100;
-  src: url("/fonts/100.woff2") format("woff2");
+  src: url("fonts/100.woff2") format("woff2");
 }
 @font-face {
   font-family: "poppins";
   font-weight: 400;
-  src: url("/fonts/400.woff2") format("woff2");
+  src: url("fonts/400.woff2") format("woff2");
 }
 @font-face {
   font-family: "poppins";
   font-weight: 600;
-  src: url("/fonts/600.woff2") format("woff2");
+  src: url("fonts/600.woff2") format("woff2");
 }
 
 :root {
@@ -33,6 +33,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 body {
   font-family: "poppins";
@@ -49,7 +50,7 @@ a {
 .header {
   width: 100%;
   height: 100vh;
-  background: var(--purple-gradient), url("/img/header-bg.jpg");
+  background: var(--purple-gradient), url("img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,6 +69,7 @@ a {
 }
 .navigation .links {
   display: flex;
+  position: relative;
 }
 .navigation .links .link {
   padding: 0 1.6rem;
@@ -79,7 +81,7 @@ a {
 }
 .navigation .links a:hover,
 .navigation .links a:active {
-  color: #000;
+  color: rgb(199, 199, 199);
 }
 .tag-line {
   position: absolute;
@@ -115,5 +117,4 @@ a {
 }
 .tag-line li a:hover {
   background: var(--button-gradient);
-  border: none;
 }
