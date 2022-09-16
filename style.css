@@ -17,11 +17,7 @@
 :root {
   --primary-color: #ab55c8;
   --secondary-color: #2d219f;
-  --purple-gradient: linear-gradient(
-    to left,
-    rgba(171, 85, 200, 0.9),
-    rgba(45, 33, 159, 0.8)
-  );
+  --purple-gradient: linear-gradient(to left, #ab55c8e6, #2d219fcc);
   --button-gradient: linear-gradient(
     to left,
     var(--primary-color),
@@ -97,7 +93,8 @@ body {
   text-transform: uppercase;
   font-size: 1.8rem;
 }
-.tag-line a {
+.tag-line #getBtn {
+  cursor: pointer;
   color: #fff;
   background: transparent;
   font-size: 1.2rem;
@@ -106,11 +103,16 @@ body {
   border-radius: 50px;
   text-transform: capitalize;
   border: 1px solid #fff;
+  transition: all 0.5s;
 }
 .tag-line li {
   text-align: center;
   margin: 3.2rem;
 }
-.tag-line li a:hover {
-  background: var(--button-gradient);
+.tag-line li #getBtn:hover {
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
