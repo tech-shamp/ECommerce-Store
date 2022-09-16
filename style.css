@@ -33,9 +33,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
   list-style: none;
   text-decoration: none;
-  transition: all 0.5s;
 }
 body {
   font-family: "poppins";
@@ -75,8 +75,8 @@ body {
   transition: all 0.5s;
   color: white;
 }
-.navigation .links button:hover,
-.navigation .links button:active {
+.navigation .links a:hover,
+.navigation .links a:active {
   color: rgb(199, 199, 199);
 }
 .tag-line {
@@ -97,7 +97,7 @@ body {
   text-transform: uppercase;
   font-size: 1.8rem;
 }
-.tag-line button {
+.tag-line a {
   color: #fff;
   background: transparent;
   font-size: 1.2rem;
@@ -111,6 +111,6 @@ body {
   text-align: center;
   margin: 3.2rem;
 }
-.tag-line li button:hover {
+.tag-line li a:hover {
   background: var(--button-gradient);
 }
